@@ -3,7 +3,7 @@ var quote = {
 	theQuote: ''
 }
 
-var getData = function() {
+function getData() {
 var url = 'https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en';
 fetch(url)
 	.then(function(response) {
@@ -37,10 +37,8 @@ function setNewTweetMsg() {
   tweetBtn,
   {
     count: 'none',
-    text: quote.theQuote + "― " + quote.author,
+    text: quote.theQuote + " ― " + quote.author,
     size: 'large'
-  }).then(function (el) {
-    console.log("Button created.")
   });
   tweetBtn.removeChild(document.querySelector('.twitter-share-button'));
 }
@@ -51,3 +49,5 @@ var quoteBtn = document.querySelector('.quote-btn');
 var tweetBtn = document.querySelector('.twitter-share-wrapper');
 
 quoteBtn.addEventListener('click', getData);
+
+getData();

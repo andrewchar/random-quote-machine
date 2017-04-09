@@ -1,0 +1,51 @@
+html {
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  background: url('../images/hero-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+.quote-btn {
+  font-size: 1em;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  margin: 30px auto;
+  padding: 10px;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  transition: background-color .3s;
+}
+
+.quote-btn:hover {
+  background-color: #27ae60;
+}
+
+.quote-content {
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #2ecc71;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+ul {
+  list-style: none;
+}
+
+.twitter-share-wrapper {
+  margin: 0 0 15px 40px;
+}
